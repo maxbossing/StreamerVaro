@@ -1,0 +1,56 @@
+name: StreamerVaro
+version: 0.4.5
+main: de.maxbossing.streamervaro.StreamerVaro
+api-version: 1.19
+prefix: streamerVaro
+depend: [ MaxAPI ]
+authors: [ Max ]
+description: Streamer Varo
+website: maxbossing.de
+
+commands:
+
+  strikes:
+    permission: streamervaro.command.strikes
+
+  addstrikes:
+    permission: streamervaro.command.addstrikes
+
+  removestrikes:
+    permission: streamervaro.command.removestrikes
+
+
+  team:
+    permission: streamervaro.command.team
+
+  leaveteam:
+    permission: streamervaro.command.leaveteam
+
+
+  startgame:
+    permission: streamervaro.command.startgame
+  stopgame:
+    permission: streamervaro.command.stopgame
+
+
+permissions:
+
+  streamervaro.command.strikes:
+    default: true
+
+  streamervaro.command.addstrikes:
+    default: op
+
+  streamervaro.command.removestrikes:
+    default: op
+
+
+  streamervaro.command.team:
+    default: true
+
+  streamervaro.command.leaveteam:
+    default: true
+
+
+  streamervaro.bypass.*:
+    default: op
